@@ -41,32 +41,39 @@ ul,li
 
 // вурхняя секция
 .top-head
-	height: 142px
+	height: 148px
 	img
-		margin-top: 27px
+		margin-top: 28px
+		margin-left: 14px
 	&__desc
 		font-size: 20px
-		color: #font-family
-		margin-top: 42px
+		font-family: Open sans, sans-serif
+		letter-spacing: 1px
+		margin-top: 34px
+		margin-left: 6px
 		font-weight: 300
 		line-height: 36px
 		span
 			font-weight: semibold
 			color: $blue-color
 	&__cont
-		margin-top: 42px
+		margin-top: 36px
 		i
-			margin-right: 16px
-			height: 17px
-			width: 17px
+			margin-right: 15px
 			color: #c2c2c2
 			vertical-align: middle
-			padding-bottom: 3px
+			padding-bottom: 9px
+			display: inline-block
+			font-size: 18px
+			margin-left: -6px
+			&:last-child
+				margin-left: 4px
 		.top-line__phone
 			color: $green-color
 			font-size: 28px
 			height: 30px
-			margin-bottom: 18px
+			margin-bottom: 14px
+			letter-spacing: 0.7px
 			span
 				font-style: 300
 		.top-line__mail
@@ -136,38 +143,161 @@ ul,li
 
 // слайдер
 .slider-top
-	height: 450px
+	height: 452px
 	background-color: blue
 	background-image: url(../img/banner/bg-banner.png)
 	background-position: center
 	background-size: cover
 	color: #fff
+	position: relative
+	//стрелки
+	.sl-next,.sl-prev
+		background-repeat: no-repeat
+		width: 18px
+		height: 82px
+		background-position: top center
+		cursor: pointer
+		position: absolute
+		top: 47%
+		transform: translateY(-50%)
+	.sl-next
+		background-image: url(../img/banner/sl-right.png)
+		right: -17px
+	.sl-prev
+		background-image: url(../img/banner/sl-left.png)
+		left: -18px
+	//навигация
+	.slick-dots
+		position: absolute
+		bottom: 18px
+		left: 8px
+		width: 100px
+		li
+			width: 11px
+			height: 11px
+			border-radius: 50%
+			border: 1px solid #fff
+			display: inline-block
+			list-style-type: none
+			margin: 0 6px
+			transition: all 0.2s ease
+			button
+				padding: 0
+				&::before
+					content: ""
+		.slick-active
+			background-color: #fff
+
+	// слайды
 	.sl-slide
 		overflow: hidden
+		margin-left: 29px
+		letter-spacing: 1.2px
 		&__head
 			text-transform: uppercase
 			font-size: 34px
 			line-height: 45px
 			font-weight: 700
-			margin-top: 77px
-			margin-bottom: 32px
+			margin-top: 70px
+			margin-bottom: 16px
 		&__desc
 			font-size: 18px
 			font-weight: 500
 			line-height: 30px
-			margin-bottom: 32px
+			margin-bottom: 33px
+			letter-spacing: 2px
 		img
 			height: 100%
-			margin-top: 29px
+			margin-top: 31px
+			margin-left: -54px
 		.button
-			margin-bottom: 20px
+			margin-bottom: 29px
 			display: inline-block
-			padding: 20px 40px
+			padding: 17px 38px 17px 46px
 			color: #000
 			background-color: #fff
-			border-radius: 3px
+			border-radius: 1px
+			letter-spacing: 1px
+			transition: all .2s ease
+			&:hover
+				text-decoration: none
+				background-color: #ccc
 		&__factor
 			font-size: 14px
 			display: block
 			color: #fff
 			text-decoration: underline
+
+// секция icons
+.icons
+	color: #424242
+	text-align: center
+	margin-bottom: 65px
+.h2-head
+	font-size: 37px
+	line-height: 50px
+	color: $bark-blue
+	text-transform: none
+	margin-top: 47px
+	letter-spacing: 0.3px
+	margin-bottom: 46px
+	text-align: center
+
+.card
+	margin-left: -31px
+	img
+		width: 108px
+		height: 108px
+		margin-bottom: 34px
+	&__head
+		font-size: 17px
+		margin-bottom: 22px
+		font-weight: 600
+	&__desc
+		font-size: 15px
+		line-height: 20px
+		margin-left: -2px
+
+.card-2
+	margin-left: 2px
+.card-3
+	margin-left: 26px
+
+
+// сукция conditions
+.conditions
+	background-image: url(../img/conditions/bg-financing.png)
+	background-position: top center
+	background-size: cover
+	height: 450px
+	position: relative
+	text-align: center
+	color: #fff
+	h2
+		color: #fff
+		margin-bottom: 50px
+	.card
+		margin-left: -18px
+		img
+			width: 120px
+			height: 120px
+			margin-bottom: 24px
+		figcaption
+			text-transform: uppercase
+			font-size: 20px
+			line-height: 28px
+			font-weight: 500
+			margin-bottom: 16px
+		b
+			letter-spacing: 0.6px
+	.card-2
+		margin-left: 2px
+	.card-3
+		margin-left: 18px
+
+// секция problem
+.problem
+	background-image: url(../img/problem/bg-global.png)
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat

@@ -1,12 +1,15 @@
 $(function() {
 
 	// ВЫравнивание блоков по высоте
-	//$(".service-item h4").equalHeights();
+	$(".conditions .card figcaption").equalHeights();
 
 	//Слайдер
 	$(".sl").slick({
 		arrows: true,
 		dots: true,
+		prevArrow: '<div class="sl-next"></div>', // можем вставить любой элемент
+		nextArrow: '<div class="sl-prev"></div>', //по дефолту
+		dotsClass: "slick-dots",
 		responsive: [
 		{
 			breakpoint: 768,
