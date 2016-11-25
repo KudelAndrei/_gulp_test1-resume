@@ -144,7 +144,6 @@ ul,li
 // слайдер
 .slider-top
 	height: 452px
-	background-color: blue
 	background-image: url(../img/banner/bg-banner.png)
 	background-position: center
 	background-size: cover
@@ -301,3 +300,198 @@ ul,li
 	background-position: top center
 	background-size: cover
 	background-repeat: no-repeat
+	height: 675px
+	&__wrap
+		margin-left: 15px
+	h2
+		font-size: 33px
+		margin-top: 50px
+		color: $green-color
+		line-height: 45px
+		margin-bottom: 12px
+		font-weight: 700
+	&_desc
+		font-size: 20px
+		line-height: 25px
+		margin-bottom: 56px
+		letter-spacing: 0.5px
+		span
+			font-weight: 700
+
+	.problem-card
+		margin-bottom: 57px
+		img
+			float: left
+			margin-right: 17px
+			clear: both
+		&__head
+			padding-top: 16px
+			margin-bottom: 8px
+			letter-spacing: -0.03em
+		&__desc
+			line-height: 20px
+	.problem-card2
+		h4
+			padding-top: 27px
+
+// сукция tetx
+.text
+	height: 336px
+	background-color: $green-color
+	color: #fff
+	font-family: Open Sans, sans-serif
+	&__head
+		font-size: 36px
+		line-height: 44px
+		margin-top: 52px
+		margin-left: 15px
+		margin-bottom: 4px
+		font-weight: 700
+		text-transform: none
+	&__desc
+		margin-left: 15px
+		font-size: 35px
+		line-height: 43px
+
+
+// секция seo
+.seo
+	height: 507px
+	background-image: url(../img/seo/bg-advantages.png)
+	background-size: cover
+	background-position: top center
+	&-content
+		background-color: #f3f3f3
+		width: 695px
+		margin-left: -20px
+		height: 332px
+		padding: 30px
+		margin-top: 60px
+		position: relative
+		z-index: 1
+	&-head
+		margin-top: 3px
+		font-weight: 600
+		text-transform: none
+		font-size: 20px
+		letter-spacing: -0.45px
+		line-height: 23px
+		margin-bottom: 13px
+	&-desc
+		line-height: 24px
+		font-size: 18px
+	&-logo
+		float: left
+		position: absolute
+		bottom: 27px
+	&-fio
+		position: absolute
+		bottom: 35px
+		right: 29px
+		font-size: 18px
+		letter-spacing: -0.2px
+		font-weight: 700
+		line-height: 25px
+	.seo-shadow
+		width: 334px
+		height: 328px
+		background-color: $blue-color
+		position: absolute
+		top: 109px
+		right: -100px
+		z-index: 0
+		opacity: .5
+
+
+// секция parthners
+.parthners
+	background-color: #ededed
+	padding-bottom: 30px
+	text-align: center
+	&-head
+		font-size: 32px
+		letter-spacing: 1.26px
+		font-weight: 500
+		line-height: 50px
+		color: $bark-blue
+		margin-top: 47px
+		margin-bottom: 48px
+		text-transform: none
+	&-card
+		width: 198px
+		height: 166px
+		float: left
+		background-color: #fff
+		position: relative
+		margin-bottom: 40px
+		display: inline-block
+		margin-left: 30px
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
+
+// секция comments
+.comments
+	height: 460px
+	background-image: url(../img/comments/bg-bisnes.png)
+	background-position: center top
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	&-head
+		margin-top: 48px
+		text-transform: none
+		margin-bottom: 44px
+		font-size: 32px
+		line-height: 50px
+		font-weight: 600
+		color: $bark-blue
+		text-align: center
+	.comments
+		&-slide
+			margin-left: 5px
+			text-align: left
+			margin: 0 15px
+		&-text
+			font-style: italic
+			font-size: 18px
+			letter-spacing: -0.1px
+			line-height: 22px
+			margin-top: -6px
+			background-color: rgba($blue-color, .6)
+			border-radius: 6px
+			color: #fff
+			margin-top: 1px
+			padding: 22px 30px 26px
+			margin-bottom: 22px
+			min-height: 180px
+		&-author
+			font-size: 16px
+			line-height: 25px
+	// стрелки слайдера
+	.comments-next,.comments-prev
+		background-repeat: no-repeat
+		background-position: top center
+		width: 11px
+		height: 34px
+		cursor: pointer
+		position: absolute
+		top: 32%
+		transform: translateY(-50%)
+	.comments-next
+		background-image: url(../img/comments/sl-right.png)
+		right: -26px
+	.comments-prev
+		background-image: url(../img/comments/sl-left.png)
+		left: -26px
+
+
+// секция phone
+.phone
+	height: 172px
+	background-image: url(../img/phone/bg-call.png)
+	background-size: cover
+	color: #fff

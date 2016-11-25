@@ -18,13 +18,24 @@ $(function() {
 				slidesToShow: 3
 			}
 		},
+		]
+	});
+
+
+	//Слайдер
+	$(".sl-comments").slick({
+		arrows: true,
+		prevArrow: '<div class="comments-prev"></div>', // можем вставить любой элемент
+		nextArrow: '<div class="comments-next"></div>', //по дефолту
+		slidesToShow: 2,
+		responsive: [
 		{
-			breakpoint: 480,
+			breakpoint: 768,
 			settings: {
 				arrows: false,
-				slidesToShow: 1
+				slidesToShow: 3
 			}
-		}
+		},
 		]
 	});
 
