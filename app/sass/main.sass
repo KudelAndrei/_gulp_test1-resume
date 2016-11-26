@@ -3,5 +3,399 @@
 @import "libs"
 
 //Custom styles here
+// сукция conditions
+.conditions
+	background-image: url(../img/conditions/bg-financing.png)
+	background-position: top center
+	background-size: cover
+	height: 450px
+	position: relative
+	text-align: center
+	color: #fff
+	h2
+		color: #fff
+		margin-bottom: 46px
+	.card
+		margin-left: -18px
+		&:hover
+			img
+				transform: rotate(-10deg)
+			figcaption
+				transform: translateY(5px)
+			.card-day
+				transform: translateY(-5px)
+		img
+			width: 120px
+			height: 120px
+			margin-bottom: 24px
+			transition: all ease-in-out 0.4s
+		figcaption
+			text-transform: uppercase
+			font-size: 20px
+			line-height: 28px
+			font-weight: 500
+			margin-bottom: 16px
+			transition: all ease-in-out 0.3s
+  	span
+  		transition: all ease-in-out 0.3s
+      font-family: "roboto", sans-serif
+      font-size: 18px
+      line-height: 20px
+	.card-2
+		margin-left: 2px
+	.card-3
+		margin-left: 18px
+
+// секция problem
+.problem
+	background-image: url(../img/problem/bg-global.png)
+	background-position: top center
+	background-size: cover
+	background-repeat: no-repeat
+	height: 675px
+	&__wrap
+		margin-left: 13px
+	&__head
+		font-size: 34px
+		margin-top: 48px
+		color: rgba($green-color,.7)
+		line-height: 45px
+		margin-bottom: 13px
+		font-family: "Open Sans bold", sans-serif
+	&-desc
+		font-size: 18px
+		line-height: 25px
+		margin-bottom: 56px
+    font-family: "Open Sans", sans-serif
+    margin-left: 4px
+		strong
+			font-family: "Open Sans", sans-serif
+      font-size: 16px
+      font-weight: normal
+	.problem-card
+		margin-bottom: 57px
+		&:hover
+			cursor: default
+			img
+				transform: translateX(5px)
+			.problem-card__head
+				transform: translateX(-5px)
+			.problem-card__desc
+				transform: translateX(-5px)
+		img
+			float: left
+			margin-right: 17px
+			clear: both
+			transition: all ease-in-out 0.3s
+		&__head
+			padding-top: 16px
+			margin-bottom: 8px
+			transition: all ease-in-out 0.3s
+		&__desc
+			line-height: 20px
+			transition: all ease-in-out 0.3s
+	.problem-card2
+		h4
+			padding-top: 27px
+
+// сукция tetx
+.text
+	height: 336px
+	background-color: $green-color
+	color: #fff
+	font-family: "Open Sans", sans-serif
+	.text__head
+    font-size: 34px
+    line-height: 45px
+    margin-top: 47px
+    margin-left: 13px
+    margin-bottom: 4px
+    font-family: "Open Sans bold", sans-serif
+    text-transform: none
+    text-shadow: 3px 0px 3px rgba(#000, .1)
+	.text__desc
+    margin-left: 13px
+    font-size: 34px
+    line-height: 45px
+    font-family: "Open Sans light", sans-serif
+
+// секция seo
+.seo
+	height: 507px
+	background-image: url(../img/seo/bg-advantages.png)
+	background-size: cover
+	background-position: top center
+	&-content
+		background-color: #f3f3f3
+		width: 695px
+		margin-left: -20px
+		height: 332px
+		padding: 30px
+		margin-top: 60px
+		position: relative
+		z-index: 1
+		&:hover
+			.seo-shadow
+				transform: translate(-50%, -50%)
+	&-head
+		font-family: "Open Sans bold", sans-serif
+		text-transform: none
+		font-size: 18px
+		line-height: 24px
+		margin-bottom: 13px
+	.seo-desc
+		line-height: 24px
+		font-size: 18px
+    font-family: "Open Sans light", sans-serif
+	&-logo
+		float: left
+		position: absolute
+		bottom: 30px
+	&-fio
+		position: absolute
+		bottom: 37px
+		right: 30px
+		font-size: 16px
+		font-family: "Open Sans bold", sans-serif
+		line-height: 25px
+	.seo-shadow
+		width: 334px
+		height: 328px
+		background-color: $blue-color
+		position: absolute
+		top: 109px
+		right: -100px
+		z-index: 0
+		opacity: .5
+		transition: all ease-in-out 0.3s
+
+// секция parthners
+.parthners
+	background-color: #ededed
+	padding-bottom: 30px
+	text-align: center
+	&-head
+		font-size: 31px
+		font-family: "Open Sans semibold", sans-serif
+		line-height: 50px
+		color: $bark-blue
+		margin-top: 45px
+		margin-bottom: 48px
+		text-transform: none
+	&-card
+		width: 198px
+		height: 166px
+		float: left
+		background-color: #fff
+		position: relative
+		margin-bottom: 40px
+		display: inline-block
+		margin-left: 30px
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
+// секция comments
+.comments
+	height: 460px
+	background-image: url(../img/comments/bg-bisnes.png)
+	background-position: center -222px
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	&-head
+		margin-top: 45px
+		text-transform: none
+		margin-bottom: 47px
+		font-size: 31px
+		line-height: 50px
+		font-family: "Open Sans semibold", sans-serif
+		color: $bark-blue
+		text-align: center
+	.comments
+		&-slide
+			margin-left: 5px
+			text-align: left
+			margin: 0 15px
+		&-text
+			font-family: "Open Sans italic", sans-serif
+			font-size: 15px
+			line-height: 22px
+			background-color: rgba($blue-color, .8)
+			border-radius: 6px
+			color: #fff
+			margin-top: 1px
+			padding: 24px 20px 26px 29px
+			margin-bottom: 22px
+			min-height: 180px
+		&-author
+      font-size: 15px
+      line-height: 25px
+      font-family: "Open Sans semibold", sans-serif
+	// стрелки слайдера
+	.comments-next,.comments-prev
+		background-repeat: no-repeat
+		background-position: top center
+		width: 11px
+		height: 34px
+		cursor: pointer
+		position: absolute
+		top: 32%
+		transform: translateY(-50%)
+	.comments-next
+		background-image: url(../img/comments/sl-right.png)
+		right: -26px
+	.comments-prev
+		background-image: url(../img/comments/sl-left.png)
+		left: -26px
+
+// секция phone
+.phone
+	height: 170px
+	background-image: url(../img/phone/bg-call.png)
+	background-size: cover
+	color: #fff
+	text-align: center
+	&-head
+		font-size: 40px
+		font-family: "Open Sans bold", sans-serif
+		line-height: 59px
+		margin-top: 25px
+		text-transform: none
+	&-call
+    font-size: 40px
+    font-family: "Open Sans bold", sans-serif
+    line-height: 58px
+    text-transform: uppercase
+    padding-left: -5p
+    span
+      color: $bark-blue
+      font-family: "Open Sans light", sans-serif
+    em
+      font-family: "Open Sans", sans-serif
+
+// секция factoring
+.factoring
+	height: 432px
+	text-align: center
+	&-head
+		margin-top: 46px
+		font-size: 34px
+		text-transform: none
+		line-height: 50px
+		font-family: "Open Sans semibold", sans-serif
+		color: $bark-blue
+		margin-bottom: 49px
+	&-card
+		width: 230px
+		display: inline-block
+		margin: 0 23px
+		vertical-align: top
+		&:hover
+			img
+				transform: translateY(-10px)
+			span
+				transform: scale(1.1)
+		img
+			display: inline-block
+			margin-bottom: 20px
+			transition: all ease-in-out 0.3s
+		span
+			display: block
+			font-size: 24px
+			font-family: "Open Sans semibold", sans-serif
+			color: $green-color
+			margin-bottom: 12px
+			transition: all ease 0.2s
+		&__desc
+			font-size: 18px
+			line-height: 20px
+			margin-left: -4px
+      font-family: "robotobold", sans-serif
+	&-between
+		display: inline-block
+		vertical-align: top
+		position: relative
+		top: 28px
+		left: 4px
+	.factoring-between2
+		left: 6px
+		top: 24px
+
+	.factoring-card2
+		padding-left: 25px
+		figcaption
+
+// секция form
+.form-call
+	height: 500px
+	background-color: #ededef
+	position: relative
+	&::before
+		position: absolute
+		content: ""
+		background-image: url(../img/form/logo.png)
+		background-repeat: no-repeat
+		background-position: 25px center
+		top: 50%
+		transform: translateY(-47%)
+		width: 495px
+		height: 286px
+	&__man
+		margin-left: 148px
+		margin-top: 25px
+	&__head
+		font-size: 42px
+		line-height: 56px
+		color: $bark-blue
+		margin-top: 46px
+		text-transform: none
+	h3
+		font-size: 31px
+		line-height: 41px
+		color: $bark-blue
+		margin-bottom: 50px
+		text-transform: none
+		span
+			color: $green-color
+			text-transform: uppercase
+	label
+		display: block
+		margin-bottom: 20px
+		width: 350px
+		margin-left: 2px
+		input
+			width: 100%
+			height: 50px
+			border-radius: 5px
+			padding-left: 22px
+			border: none
+			line-height: 41px
+			&:placeholder
+				color: rgba(#111,.2)
+	button
+		padding: 15px 10px
+		font-family: "Open sans semibold", sans-serif
+		border: none
+		background-color: #ff7070
+		border-radius: 5px
+		border-bottom: 3px solid #cf5e5e
+		width: 350px
+		margin-left: 2px
+		font-size: 18px
+		font-weight: 600
+		color: #333333
+		transition: all ease 0.2s
+		&:hover
+			background-color: #fd8787
+	.bottom-line
+		.top-line
+			&--green,&--blue,&--darkblue
+			margin-top: -3px
+
+
+
 
 @import "media"

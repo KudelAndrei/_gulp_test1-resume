@@ -25,7 +25,7 @@ ul,li
 	display: inline-block
 
 .main-head
-	font-family: Open Sans, sans-serif
+	font-family: "Open Sans", sans-serif
 
 
 // верхняя линия
@@ -43,18 +43,17 @@ ul,li
 .top-head
 	height: 148px
 	img
-		margin-top: 28px
-		margin-left: 14px
+		margin-top: 29px
+		margin-left: 15px
 	&__desc
 		font-size: 20px
-		font-family: Open sans, sans-serif
-		letter-spacing: 1px
 		margin-top: 34px
-		margin-left: 6px
+		margin-left: 7px
 		font-weight: 300
 		line-height: 36px
+		font-family: "Open Sans light", sans-serif
 		span
-			font-weight: semibold
+			font-family: "Open Sans semibold", sans-serif
 			color: $blue-color
 	&__cont
 		margin-top: 36px
@@ -73,14 +72,14 @@ ul,li
 			font-size: 28px
 			height: 30px
 			margin-bottom: 14px
-			letter-spacing: 0.7px
 			span
-				font-style: 300
+				font-family: "Open Sans light", sans-serif
 		.top-line__mail
 			a
 				color: $blue-color
 				font-size: 14px
 				text-decoration: underline
+				font-family: "Open Sans light", sans-serif
 				&:hover
 					text-decoration: none
 
@@ -144,8 +143,8 @@ ul,li
 // слайдер
 .slider-top
 	height: 452px
-	background-image: url(../img/banner/bg-banner.png)
-	background-position: center
+	background-image: url(../img/sl/bg-banner.png)
+	background-position: center top
 	background-size: cover
 	color: #fff
 	position: relative
@@ -160,16 +159,16 @@ ul,li
 		top: 47%
 		transform: translateY(-50%)
 	.sl-next
-		background-image: url(../img/banner/sl-right.png)
+		background-image: url(../img/sl/sl-right.png)
 		right: -17px
 	.sl-prev
-		background-image: url(../img/banner/sl-left.png)
+		background-image: url(../img/sl/sl-left.png)
 		left: -18px
 	//навигация
 	.slick-dots
 		position: absolute
-		bottom: 18px
-		left: 8px
+		bottom: 19px
+		left: 7px
 		width: 100px
 		li
 			width: 11px
@@ -191,59 +190,71 @@ ul,li
 	.sl-slide
 		overflow: hidden
 		margin-left: 29px
-		letter-spacing: 1.2px
 		&__head
 			text-transform: uppercase
-			font-size: 34px
-			line-height: 45px
+			font-family: "Open Sans bold",sans-serif
+			text-shadow: 3px 0 3px rgba(#000, .2)
 			font-weight: 700
+			font-size: 36px
+			line-height: 44px
 			margin-top: 70px
-			margin-bottom: 16px
+			margin-bottom: 18px
 		&__desc
 			font-size: 18px
-			font-weight: 500
+			font-family: "Open Sans", sans-serif
 			line-height: 30px
 			margin-bottom: 33px
-			letter-spacing: 2px
 		img
 			height: 100%
 			margin-top: 31px
-			margin-left: -54px
+			margin-left: -84px
+			position: relative
 		.button
-			margin-bottom: 29px
+			margin-bottom: 27px
 			display: inline-block
-			padding: 17px 38px 17px 46px
+			width: 255px
+			text-align: center
+			height: 52px
+			padding-top: 18px
 			color: #000
 			background-color: #fff
-			border-radius: 1px
-			letter-spacing: 1px
+			border-radius: 2px
+			font-family: "Open Sans semibold", sans-serif
 			transition: all .2s ease
+			background: linear-gradient(to top , #d7d7d7, #fff)
+			box-shadow: 2px 0 2px rgba(#e06161, .5)
 			&:hover
 				text-decoration: none
 				background-color: #ccc
 		&__factor
 			font-size: 14px
+			font-family: "Open Sans light", sans-serif
 			display: block
 			color: #fff
 			text-decoration: underline
+			&:hover
+				text-decoration: none
+
 
 // секция icons
 .icons
 	color: #424242
 	text-align: center
-	margin-bottom: 65px
+	height: 492px
 .h2-head
-	font-size: 37px
-	line-height: 50px
+	font-size: 34px
+	margin-left: 2px
+	line-height: 42px
 	color: $bark-blue
 	text-transform: none
-	margin-top: 47px
-	letter-spacing: 0.3px
+	font-family: "Open Sans semibold", sans-serif
+	margin-top: 50px
 	margin-bottom: 46px
 	text-align: center
 
 .card
-	margin-left: -31px
+	margin-left: -33px
+	margin-top: 6px
 	cursor: default
 	&:hover
 		img
@@ -259,415 +270,19 @@ ul,li
 		margin-bottom: 34px
 		transition: all ease-in-out .2s
 	&__head
-		font-size: 17px
-		margin-bottom: 22px
-		font-weight: 600
+		font-size: 16px
+		margin-bottom: 23px
+		font-family: "Open Sans semibold", sans-serif
 		transition: all ease-in-out .2s
 	&__desc
-		font-size: 15px
+		font-size: 14px
 		line-height: 20px
 		margin-left: -2px
 		transition: all ease-in-out .2s
 .card-2
 	margin-left: 2px
 .card-3
-	margin-left: 26px
-
-// сукция conditions
-.conditions
-	background-image: url(../img/conditions/bg-financing.png)
-	background-position: top center
-	background-size: cover
-	height: 450px
-	position: relative
-	text-align: center
-	color: #fff
-	h2
-		color: #fff
-		margin-bottom: 50px
-	.card
-		margin-left: -18px
-		&:hover
-			img
-				transform: rotate(-10deg)
-			figcaption
-				transform: translateY(-10px)
-			b
-				transform: translateY(-10px)
-		img
-			width: 120px
-			height: 120px
-			margin-bottom: 24px
-			transition: all ease-in-out 0.4s
-		figcaption
-			text-transform: uppercase
-			font-size: 20px
-			line-height: 28px
-			font-weight: 500
-			margin-bottom: 16px
-			transition: all ease-in-out 0.3s
-		b
-			letter-spacing: 0.6px
-			transition: all ease-in-out 0.3s
-	.card-2
-		margin-left: 2px
-	.card-3
-		margin-left: 18px
-
-// секция problem
-.problem
-	background-image: url(../img/problem/bg-global.png)
-	background-position: top center
-	background-size: cover
-	background-repeat: no-repeat
-	height: 675px
-	&__wrap
-		margin-left: 15px
-	h2
-		font-size: 33px
-		margin-top: 50px
-		color: $green-color
-		line-height: 45px
-		margin-bottom: 12px
-		font-weight: 700
-	&_desc
-		font-size: 20px
-		line-height: 25px
-		margin-bottom: 56px
-		letter-spacing: 0.5px
-		span
-			font-weight: 700
-	.problem-card
-		margin-bottom: 57px
-		&:hover
-			cursor: default
-			img
-				transform: translateX(5px)
-			.problem-card__head
-				transform: translateX(-5px)
-			.problem-card__desc
-				transform: translateX(-5px)
-		img
-			float: left
-			margin-right: 17px
-			clear: both
-			transition: all ease-in-out 0.3s
-		&__head
-			padding-top: 16px
-			margin-bottom: 8px
-			letter-spacing: -0.03em
-			transition: all ease-in-out 0.3s
-		&__desc
-			line-height: 20px
-			transition: all ease-in-out 0.3s
-	.problem-card2
-		h4
-			padding-top: 27px
-
-// сукция tetx
-.text
-	height: 336px
-	background-color: $green-color
-	color: #fff
-	font-family: Open Sans, sans-serif
-	&__head
-		font-size: 36px
-		line-height: 44px
-		margin-top: 52px
-		margin-left: 15px
-		margin-bottom: 4px
-		font-weight: 700
-		text-transform: none
-	&__desc
-		margin-left: 15px
-		font-size: 35px
-		line-height: 43px
-
-// секция seo
-.seo
-	height: 507px
-	background-image: url(../img/seo/bg-advantages.png)
-	background-size: cover
-	background-position: top center
-	&-content
-		background-color: #f3f3f3
-		width: 695px
-		margin-left: -20px
-		height: 332px
-		padding: 30px
-		margin-top: 60px
-		position: relative
-		z-index: 1
-		&:hover
-			.seo-shadow
-				transform: translate(-50%, -50%)
-	&-head
-		margin-top: 3px
-		font-weight: 600
-		text-transform: none
-		font-size: 20px
-		letter-spacing: -0.45px
-		line-height: 23px
-		margin-bottom: 13px
-	&-desc
-		line-height: 24px
-		font-size: 18px
-	&-logo
-		float: left
-		position: absolute
-		bottom: 27px
-	&-fio
-		position: absolute
-		bottom: 35px
-		right: 29px
-		font-size: 18px
-		letter-spacing: -0.2px
-		font-weight: 700
-		line-height: 25px
-	.seo-shadow
-		width: 334px
-		height: 328px
-		background-color: $blue-color
-		position: absolute
-		top: 109px
-		right: -100px
-		z-index: 0
-		opacity: .5
-		transition: all ease-in-out 0.3s
-
-// секция parthners
-.parthners
-	background-color: #ededed
-	padding-bottom: 30px
-	text-align: center
-	&-head
-		font-size: 32px
-		letter-spacing: 1.26px
-		font-weight: 500
-		line-height: 50px
-		color: $bark-blue
-		margin-top: 47px
-		margin-bottom: 48px
-		text-transform: none
-	&-card
-		width: 198px
-		height: 166px
-		float: left
-		background-color: #fff
-		position: relative
-		margin-bottom: 40px
-		display: inline-block
-		margin-left: 30px
-		img
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-
-// секция comments
-.comments
-	height: 460px
-	background-image: url(../img/comments/bg-bisnes.png)
-	background-position: center -222px
-	background-repeat: no-repeat
-	background-size: cover
-	text-align: center
-	&-head
-		margin-top: 48px
-		text-transform: none
-		margin-bottom: 44px
-		font-size: 32px
-		line-height: 50px
-		font-weight: 600
-		color: $bark-blue
-		text-align: center
-	.comments
-		&-slide
-			margin-left: 5px
-			text-align: left
-			margin: 0 15px
-		&-text
-			font-style: italic
-			font-size: 18px
-			letter-spacing: -0.1px
-			line-height: 22px
-			margin-top: -6px
-			background-color: rgba($blue-color, .6)
-			border-radius: 6px
-			color: #fff
-			margin-top: 1px
-			padding: 22px 30px 26px
-			margin-bottom: 22px
-			min-height: 180px
-		&-author
-			font-size: 16px
-			line-height: 25px
-	// стрелки слайдера
-	.comments-next,.comments-prev
-		background-repeat: no-repeat
-		background-position: top center
-		width: 11px
-		height: 34px
-		cursor: pointer
-		position: absolute
-		top: 32%
-		transform: translateY(-50%)
-	.comments-next
-		background-image: url(../img/comments/sl-right.png)
-		right: -26px
-	.comments-prev
-		background-image: url(../img/comments/sl-left.png)
-		left: -26px
-
-// секция phone
-.phone
-	height: 170px
-	background-image: url(../img/phone/bg-call.png)
-	background-size: cover
-	color: #fff
-	text-align: center
-	&-head
-		font-size: 40px
-		font-weight: 700
-		line-height: 59px
-		margin-top: 25px
-		text-transform: none
-		letter-spacing: 1px
-	&-call
-		font-size: 40px
-		font-weight: 700
-		line-height: 59px
-		font-family: Open sans, sans-serif
-		text-transform: uppercase
-		padding-left: -5px
-		letter-spacing: 1px
-		span
-			color: $bark-blue
-			font-weight: 300
-		em
-			font-weight: 500
-
-// секция factoring
-.factoring
-	height: 432px
-	text-align: center
-	&-head
-		margin-top: 48px
-		font-size: 34px
-		text-transform: none
-		line-height: 50px
-		font-weight: 600
-		color: $bark-blue
-		letter-spacing: 0.6px
-		margin-bottom: 46px
-	&-card
-		width: 230px
-		display: inline-block
-		margin: 0 23px
-		vertical-align: top
-		&:hover
-			img
-				transform: translateY(-10px)
-			b
-				transform: scale(1.1)
-		img
-			display: inline-block
-			margin-bottom: 20px
-			transition: all ease-in-out 0.3s
-		b
-			display: block
-			font-size: 24px
-			font-weight: 600
-			color: $green-color
-			margin-bottom: 14px
-			font-family: "Open sans", sans-serif
-			transition: all ease 0.2s
-		&__desc
-			font-size: 18px
-			line-height: 20px
-			margin-left: -4px
-			letter-spacing: 0.2px
-	&-between
-		display: inline-block
-		vertical-align: top
-		position: relative
-		top: 28px
-		left: 4px
-	.factoring-between2
-		left: 6px
-		top: 24px
-
-	.factoring-card2
-		padding-left: 25px
-		figcaption
-			letter-spacing: 0px
-
-// секция form
-.form-call
-	height: 500px
-	background-color: #ededef
-	position: relative
-	&::before
-		position: absolute
-		content: ""
-		background-image: url(../img/form/logo.png)
-		background-repeat: no-repeat
-		background-position: 25px center
-		top: 50%
-		transform: translateY(-47%)
-		width: 495px
-		height: 286px
-	&__man
-		margin-left: 148px
-		margin-top: 25px
-	&__head
-		font-size: 42px
-		line-height: 56px
-		color: $bark-blue
-		margin-top: 46px
-		text-transform: none
-	h3
-		font-size: 31px
-		line-height: 41px
-		color: $bark-blue
-		margin-bottom: 50px
-		text-transform: none
-		span
-			color: $green-color
-			text-transform: uppercase
-	label
-		display: block
-		margin-bottom: 20px
-		width: 350px
-		margin-left: 2px
-		input
-			width: 100%
-			height: 50px
-			border-radius: 5px
-			padding-left: 22px
-			border: none
-			line-height: 41px
-			&:placeholder
-				color: rgba(#111,.2)
-	button
-		padding: 13px 10px
-		font-family: Open sans
-		border: none
-		background-color: #ff7070
-		border-radius: 5px
-		border-bottom: 3px solid #cf5e5e
-		width: 350px
-		margin-left: 2px
-		font-size: 21px
-		font-weight: 600
-		color: #333333
-		transition: all ease 0.2s
-		&:hover
-			background-color: #fd8787
-	.bottom-line
-		.top-line
-			&--green,&--blue,&--darkblue
-			margin-top: -3px
+	margin-left: 32px
 
 // секция main-footer
 .main-footer
@@ -694,29 +309,32 @@ ul,li
 		text-align: left
 		margin-top: 23px
 		&--phone
+			margin-bottom: 0px
 			a
 				font-size: 22px
 				line-height: 30px
 				color: $green-color
-				font-weight: 300
-				letter-spacing: 1px
+				font-family: "Open Sans light", sans-serif
 				margin-left: -1px
 				span
-					font-weight: 500
+					font-family: "Open Sans", sans-serif
 		&--mail
 			margin-top: 4px
 			a
 				color: $blue-color
 				text-decoration: underline
 				margin-left: -2px
-				letter-spacing: -0.2px
+				font-family: "Open sans light", sans-serif
+				font-size: 14px
+				line-height: 30px
 				&:hover
 					text-decoration: none
 
 		&--addr
-			font-size: 16px
-			margin-top: 24px
-			color: #000
+			font-size: 14px
+			margin-top: 12px
+			line-height: 21px
+			font-family: "roboto", sans-serif
 			i
 				font-size: 20px
 				margin-top: -4px
@@ -725,7 +343,7 @@ ul,li
 		&__item
 			display: block
 			text-align: left
-			margin-bottom: 11px
+			margin-bottom: 7px
 			i
 				margin-right: 14px
 				color: #e1e1e1
