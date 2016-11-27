@@ -17,6 +17,19 @@
 		margin-bottom: 46px
 	.card
 		margin-left: -18px
+		&-header
+			text-transform: uppercase
+			font-size: 20px
+			line-height: 28px
+			font-weight: 500
+			margin-bottom: 16px
+			transition: all ease-in-out 0.3s
+			font-family: "Open Sans", sans-serif
+		&-day
+			transition: all ease-in-out 0.3s
+			font-family: "roboto", sans-serif
+			font-size: 16px
+			line-height: 20px
 		&:hover
 			img
 				transform: rotate(-10deg)
@@ -29,18 +42,6 @@
 			height: 120px
 			margin-bottom: 24px
 			transition: all ease-in-out 0.4s
-		figcaption
-			text-transform: uppercase
-			font-size: 20px
-			line-height: 28px
-			font-weight: 500
-			margin-bottom: 16px
-			transition: all ease-in-out 0.3s
-  	span
-  		transition: all ease-in-out 0.3s
-      font-family: "roboto", sans-serif
-      font-size: 18px
-      line-height: 20px
 	.card-2
 		margin-left: 2px
 	.card-3
@@ -49,7 +50,7 @@
 // секция problem
 .problem
 	background-image: url(../img/problem/bg-global.png)
-	background-position: top center
+	background-position: 0 -40px
 	background-size: cover
 	background-repeat: no-repeat
 	height: 675px
@@ -66,14 +67,15 @@
 		font-size: 18px
 		line-height: 25px
 		margin-bottom: 56px
-    font-family: "Open Sans", sans-serif
-    margin-left: 4px
+		font-family: "Open Sans", sans-serif
+		margin-left: 2px
 		strong
-			font-family: "Open Sans", sans-serif
+			font-family: "Open Sans bold", sans-serif
       font-size: 16px
       font-weight: normal
 	.problem-card
 		margin-bottom: 57px
+		margin-left: 2px
 		&:hover
 			cursor: default
 			img
@@ -88,15 +90,19 @@
 			clear: both
 			transition: all ease-in-out 0.3s
 		&__head
-			padding-top: 16px
-			margin-bottom: 8px
+			padding-top: 13px
+			margin-bottom: 6px
 			transition: all ease-in-out 0.3s
+			line-height: 20px
+			font-family: "robotobold", sans-serif
 		&__desc
 			line-height: 20px
+			font-size: 14px
+			font-family: "Open Sans", sans-serif
 			transition: all ease-in-out 0.3s
 	.problem-card2
 		h4
-			padding-top: 27px
+			padding-top: 24px
 
 // сукция tetx
 .text
@@ -129,7 +135,7 @@
 		background-color: #f3f3f3
 		width: 695px
 		margin-left: -20px
-		height: 332px
+		height: 330px
 		padding: 30px
 		margin-top: 60px
 		position: relative
@@ -142,19 +148,19 @@
 		text-transform: none
 		font-size: 18px
 		line-height: 24px
-		margin-bottom: 13px
+		margin-bottom: 11px
 	.seo-desc
-		line-height: 24px
-		font-size: 18px
-    font-family: "Open Sans light", sans-serif
+		line-height: 25px
+		font-size: 16px
+		font-family: "Open Sans light", sans-serif
 	&-logo
 		float: left
 		position: absolute
-		bottom: 30px
+		bottom: 28px
 	&-fio
 		position: absolute
-		bottom: 37px
-		right: 30px
+		bottom: 35px
+		right: 31px
 		font-size: 16px
 		font-family: "Open Sans bold", sans-serif
 		line-height: 25px
@@ -191,11 +197,14 @@
 		margin-bottom: 40px
 		display: inline-block
 		margin-left: 30px
+		overflow: hidden
 		img
 			position: absolute
 			top: 50%
 			left: 50%
+			transition: all ease-in-out 0.2s
 			transform: translate(-50%, -50%)
+
 
 // секция comments
 .comments
@@ -244,6 +253,9 @@
 		position: absolute
 		top: 32%
 		transform: translateY(-50%)
+		opacity: .6
+		&:hover
+			opacity: 1
 	.comments-next
 		background-image: url(../img/comments/sl-right.png)
 		right: -26px
@@ -264,17 +276,16 @@
 		line-height: 59px
 		margin-top: 25px
 		text-transform: none
-	&-call
-    font-size: 40px
-    font-family: "Open Sans bold", sans-serif
-    line-height: 58px
-    text-transform: uppercase
-    padding-left: -5p
-    span
-      color: $bark-blue
-      font-family: "Open Sans light", sans-serif
-    em
-      font-family: "Open Sans", sans-serif
+	&-qwe
+		font-family: "Open Sans bold", sans-serif
+		font-size: 42px
+		line-height: 60px
+		span
+			color: $bark-blue
+			font-family: "Open Sans light", sans-serif
+			em
+				font-family: "Open sans", sans-serif
+
 
 // секция factoring
 .factoring

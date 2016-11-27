@@ -24,6 +24,9 @@ ul,li
 	list-style-type: none
 	display: inline-block
 
+*
+	box-sizing: border-box
+
 .main-head
 	font-family: "Open Sans", sans-serif
 
@@ -58,22 +61,25 @@ ul,li
 	&__cont
 		margin-top: 36px
 		i
-			margin-right: 15px
+			margin-right: 18px
 			color: #c2c2c2
 			vertical-align: middle
 			padding-bottom: 9px
 			display: inline-block
 			font-size: 18px
 			margin-left: -6px
-			&:last-child
-				margin-left: 4px
 		.top-line__phone
 			color: $green-color
 			font-size: 28px
 			height: 30px
-			margin-bottom: 14px
+			margin-bottom: 13px
+			font-family: "Open Sans light", sans-serif
+			letter-spacing: 0.2px
 			span
-				font-family: "Open Sans light", sans-serif
+				font-family: "Open Sans", sans-serif
+		.top-head-mail_icon
+			font-size: 15px
+			margin-top: 6px
 		.top-line__mail
 			a
 				color: $blue-color
@@ -88,52 +94,61 @@ ul,li
 	background-color: #ececec
 	line-height: 50px
 	text-align: center
-	&__item
+	&-item
 		color: #25262a
 		font-size: 15px
 		text-transform: uppercase
-		padding: 15px 100px
 		transition: all .3s ease
+		cursor: pointer
+		&--pad
+			padding: 0
+	&-link
+		display: block
+		transition: all 0.2s ease
+		color: #000
+		margin: 0 5px
 		&:hover
 			text-decoration: none
 			background-color: #007aa3
 			color: #fff
-	&-drob
+	.menu-drob
 		display: none
 		position: absolute
+		top: 50px
+		left: 0
 		width: 100%
-		&--hover
-			position: relative
-			transition: all .2s ease
-			&:hover
-				background-color: #007aa3
-				color: #fff
-				.menu-drob
-					display: block
-					z-index: 10
-					box-shadow: 6px 6px 10px 2px rgba(#111,.3)
-					&:hover
-						.menu__item--hover
-							a
-								color: #fff!important
-					&__item
-						background-color: #0082ad
-						display: block
-						padding: 16px 70px 16px 22px
-						font-size: 16px
-						line-height: 23px
-						text-align: left
-						&:hover
-							background-color: #007aa3
-							text-decoration: none
-							color: #fff
-
+		z-index: 10
+		padding: 0 20px
+		&__item
+			transition: all ease 0.3s
+			font-size: 16px
 		li
 			display: block
-			width: 100%
-			.menu-drob__item
+			background-color: #0082ad
+			a
+				display: block
+				padding: 11px 22px
+				line-height: 22px
+				color: #fff
+				border-top: 1px solid #0082ad
+				border-bottom: 1px solid #0082ad
+				text-align: left
+				text-transform: none
+				box-shadow: 10px 10px 13px rgba(#000, 0.35)
+				&:hover
+					text-decoration: none
+					background-color: #007aa3
+					border-top: 1px solid #1a88ac
+					border-bottom: 1px solid #1a88ac
+	.menu-item--hover
+		position: relative
+		&:hover
+			.menu-link
+				color: #fff
 				background-color: #007aa3
-				transition: all .2s ease
+			.menu-drob
+				display: block
+
 
 		&.active
 			display: block
@@ -157,7 +172,10 @@ ul,li
 		cursor: pointer
 		position: absolute
 		top: 47%
+		opacity: 0.6
 		transform: translateY(-50%)
+		&:hover
+			opacity: 1
 	.sl-next
 		background-image: url(../img/sl/sl-right.png)
 		right: -17px
