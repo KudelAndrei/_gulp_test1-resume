@@ -77,6 +77,7 @@ ul,li
 			letter-spacing: 0.2px
 			span
 				font-family: "Open Sans", sans-serif
+				letter-spacing: 1px
 		.top-head-mail_icon
 			font-size: 15px
 			margin-top: 6px
@@ -102,6 +103,10 @@ ul,li
 		cursor: pointer
 		&--pad
 			padding: 0
+		&--first
+			margin-left: 50px
+		&--last
+			margin-left: -39px
 	&-link
 		display: block
 		transition: all 0.2s ease
@@ -160,6 +165,7 @@ ul,li
 	height: 452px
 	background-image: url(img/sl/bg-banner.png)
 	background-position: center top
+	background-color: #ec6869
 	background-size: cover
 	color: #fff
 	position: relative
@@ -227,6 +233,7 @@ ul,li
 			margin-top: 31px
 			margin-left: -84px
 			position: relative
+
 		.button
 			margin-bottom: 27px
 			display: inline-block
@@ -302,103 +309,3 @@ ul,li
 .card-3
 	margin-left: 32px
 
-// секция main-footer
-.main-footer
-	text-align: center
-	.footer-wrap
-		height: 150px
-	.footer-cop
-		position: relative
-		bottom: 0
-		height: 35px
-		background-color: #e9e9ea
-		text-align: center
-		font-size: 12px
-		padding-top: 10px
-		line-height: 20px
-		color: #575757
-		font-family: "roboto", sans-serif
-	.footer-logo
-		margin-top: 32px
-		display: inline-block
-		margin-left: 5px
-	.menu-footer
-		width: 100%
-		text-align: left
-		margin-top: 23px
-		&--phone
-			margin-bottom: 0px
-			a
-				font-size: 22px
-				line-height: 30px
-				color: $green-color
-				font-family: "Open Sans light", sans-serif
-				margin-left: -1px
-				span
-					font-family: "Open Sans", sans-serif
-		&--mail
-			margin-top: 4px
-			a
-				color: $blue-color
-				text-decoration: underline
-				margin-left: -2px
-				font-family: "Open sans light", sans-serif
-				font-size: 14px
-				line-height: 30px
-				&:hover
-					text-decoration: none
-
-		&--addr
-			font-size: 14px
-			margin-top: 12px
-			line-height: 21px
-			font-family: "roboto", sans-serif
-			i
-				font-size: 20px
-				margin-top: -4px
-				margin-left: 3px
-				margin-right: 22px
-		&__item
-			display: block
-			text-align: left
-			margin-bottom: 7px
-			i
-				margin-right: 14px
-				color: #e1e1e1
-				margin-left: 4px
-	.wrap-soc
-		margin-top: 35px
-	.footer-soc
-		margin-bottom: 20px
-		display: block
-		text-align: left
-		margin-left: 19px
-		text-decoration: underline
-		&:hover
-			text-decoration: none
-		&__item
-			a
-				color: #fff
-				width: 26px
-				height: 26px
-				border-radius: 50%
-				line-height: 26px
-				margin: 0 3px
-				color: #fff
-				display: inline-block
-				transition: all ease 0.2s
-				&:hover
-					transform: scale(1.1)
-	.soc-ins
-		a
-			background-color: #529ac4
-			margin-left: 4px
-	.soc-odn
-		a
-			background-color: #ff7700
-	.soc-fac
-		a
-			background-color: #054b93
-	.soc-vk
-		a
-			background-color: #1e70a0

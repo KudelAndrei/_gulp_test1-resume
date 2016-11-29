@@ -55,6 +55,7 @@ gulp.task('libs', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/libs/equalHeights/equalHeights.js',
+		'app/libs/parallax.js/parallax.min.js',
 		//'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 		])
 		.pipe(concat('libs.min.js'))

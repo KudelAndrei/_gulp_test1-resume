@@ -1,7 +1,7 @@
 $(function() {
 
 	// ВЫравнивание блоков по высоте
-	$(".conditions .card figcaption").equalHeights();
+	$(".conditions .card div").equalHeights();
 
 	//Слайдер
 	$(".sl").slick({
@@ -38,6 +38,8 @@ $(function() {
 		},
 		]
 	});
+
+	$('.parallax-window').parallax();
 
 	//плавный скрол в хроме
 	try {

@@ -3,11 +3,18 @@
 @import "libs"
 
 //Custom styles here
+
+.parallax-window 
+		min-height: 300px
+		background: transparent
+		background-position: top center
+		background-size: cover
+
+
 // сукция conditions
 .conditions
-	background-image: url(../img/conditions/bg-financing.png)
-	background-position: top center
-	background-size: cover
+	//background-image: url(../img/conditions/bg-financing.png)
+	
 	height: 450px
 	position: relative
 	text-align: center
@@ -30,10 +37,11 @@
 			font-family: "roboto", sans-serif
 			font-size: 16px
 			line-height: 20px
+			display: inline-block
 		&:hover
 			img
 				transform: rotate(-10deg)
-			figcaption
+			div
 				transform: translateY(5px)
 			.card-day
 				transform: translateY(-5px)
@@ -71,8 +79,7 @@
 		margin-left: 2px
 		strong
 			font-family: "Open Sans bold", sans-serif
-      font-size: 16px
-      font-weight: normal
+			font-weight: normal
 	.problem-card
 		margin-bottom: 57px
 		margin-left: 2px
@@ -91,7 +98,7 @@
 			transition: all ease-in-out 0.3s
 		&__head
 			padding-top: 13px
-			margin-bottom: 6px
+			margin-bottom: 7px
 			transition: all ease-in-out 0.3s
 			line-height: 20px
 			font-family: "robotobold", sans-serif
@@ -111,19 +118,19 @@
 	color: #fff
 	font-family: "Open Sans", sans-serif
 	.text__head
-    font-size: 34px
-    line-height: 45px
-    margin-top: 47px
-    margin-left: 13px
-    margin-bottom: 4px
-    font-family: "Open Sans bold", sans-serif
-    text-transform: none
-    text-shadow: 3px 0px 3px rgba(#000, .1)
+		font-size: 34px
+		line-height: 45px
+		margin-top: 47px
+		margin-left: 13px
+		margin-bottom: 4px
+		font-family: "Open Sans bold", sans-serif
+		text-transform: none
+		text-shadow: 3px 0px 3px rgba(#000, .1)
 	.text__desc
-    margin-left: 13px
-    font-size: 34px
-    line-height: 45px
-    font-family: "Open Sans light", sans-serif
+		margin-left: 13px
+		font-size: 34px
+		line-height: 45px
+		font-family: "Open Sans light", sans-serif
 
 // секция seo
 .seo
@@ -240,9 +247,9 @@
 			margin-bottom: 22px
 			min-height: 180px
 		&-author
-      font-size: 15px
-      line-height: 25px
-      font-family: "Open Sans semibold", sans-serif
+			font-size: 15px
+			line-height: 25px
+			font-family: "Open Sans semibold", sans-serif
 	// стрелки слайдера
 	.comments-next,.comments-prev
 		background-repeat: no-repeat
@@ -300,9 +307,9 @@
 		color: $bark-blue
 		margin-bottom: 49px
 	&-card
-		width: 230px
+		width: 233px
 		display: inline-block
-		margin: 0 23px
+		margin: 0 14px
 		vertical-align: top
 		&:hover
 			img
@@ -318,26 +325,26 @@
 			font-size: 24px
 			font-family: "Open Sans semibold", sans-serif
 			color: $green-color
-			margin-bottom: 12px
+			margin-bottom: 14px
 			transition: all ease 0.2s
 		&__desc
-			font-size: 18px
+			font-size: 16px
 			line-height: 20px
-			margin-left: -4px
-      font-family: "robotobold", sans-serif
+			margin-left: -1px
+			font-family: "robotobold", sans-serif
 	&-between
 		display: inline-block
 		vertical-align: top
 		position: relative
 		top: 28px
-		left: 4px
+		left: 12px
 	.factoring-between2
-		left: 6px
+		left: -2px
 		top: 24px
 
 	.factoring-card2
-		padding-left: 25px
-		figcaption
+		margin-left: 42px
+
 
 // секция form
 .form-call
@@ -406,6 +413,122 @@
 			&--green,&--blue,&--darkblue
 			margin-top: -3px
 
+
+// секция main-footer
+.main-footer
+	text-align: center
+	.footer-wrap
+		height: 150px
+	.footer-cop
+		position: relative
+		bottom: 0
+		height: 35px
+		background-color: #e9e9ea
+		text-align: center
+		font-size: 12px
+		padding-top: 10px
+		line-height: 20px
+		color: #575757
+		font-family: "roboto", sans-serif
+	.footer-logo
+		margin-top: 32px
+		display: inline-block
+		margin-left: 5px
+	.menu-footer
+		width: 100%
+		text-align: left
+		margin-top: 23px
+		&--phone
+			margin-bottom: 0px
+			a
+				font-size: 22px
+				line-height: 30px
+				color: $green-color
+				font-family: "Open Sans light", sans-serif
+				margin-left: -1px
+				span
+					font-family: "Open Sans", sans-serif
+		&--mail
+			margin-top: 4px
+			a
+				color: $blue-color
+				text-decoration: underline
+				margin-left: -2px
+				font-family: "Open sans light", sans-serif
+				font-size: 14px
+				line-height: 30px
+				&:hover
+					text-decoration: none
+				em 
+					margin-left: 5px
+
+		&--addr
+			font-size: 14px
+			margin-top: 12px
+			line-height: 21px
+			font-family: "roboto", sans-serif
+			i
+				font-size: 20px
+				margin-top: -4px
+				margin-left: 3px
+				margin-right: 22px
+			em 
+					margin-left: 5px
+		&__item
+			display: block
+			text-align: left
+			margin-bottom: 7px
+			i
+				margin-right: 14px
+				color: #e1e1e1
+				margin-left: 4px
+	.wrap-soc
+		margin-top: 35px
+	.footer-soc
+		margin-bottom: 20px
+		display: block
+		text-align: left
+		margin-left: 16px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+		&__item
+			a
+				color: #fff
+				width: 25px
+				height: 25px
+				border-radius: 50%
+				line-height: 25px
+				margin: 0 3px
+				color: #fff
+				display: inline-block
+				transition: all ease 0.2s
+			&:hover
+				&.soc-ins
+					a
+						background-color: darken(#529ac4, 20%)
+				&.soc-odn
+					a
+						background-color: darken(#ff7700, 20%)
+				&.soc-fac
+					a
+						background-color: darken(#054b93, 20%)
+				&.soc-vk
+					a
+						background-color: darken(#1e70a0, 20%)
+	.soc-ins
+		a
+			background-color: #529ac4
+			margin-left: 5px
+	.soc-odn
+		a
+			background-color: #ff7700
+	.soc-fac
+		a
+			background-color: #054b93
+	.soc-vk
+		a
+			background-color: #1e70a0
 
 
 
